@@ -84,6 +84,14 @@ export FZF_DEFAULT_OPTS="
   --color=border:240
 "
 
+# --- ls (nord) ---
+export LS_COLORS="di=38;5;110:ln=38;5;139:ex=38;5;144:so=38;5;173:pi=38;5;222:bd=38;5;110:cd=38;5;110:su=38;5;131:sg=38;5;131:tw=38;5;110:ow=38;5;110"
+if command -v gls &>/dev/null; then
+  alias ls='gls -A --color=auto'
+else
+  alias ls='ls -A --color=auto'
+fi
+
 # --- Exports ---
 export PI_CODING_AGENT_DIR="$HOME/.agents"
 
