@@ -14,7 +14,13 @@ Managed with [GNU Stow](https://www.gnu.org/software/stow/).
 ```bash
 git clone --recurse-submodules <your-repo-url> ~/dotfiles
 cd ~/dotfiles
-stow zsh
+stow -t ~ */
+```
+
+This symlinks all packages (`agents`, `tmux`, `zsh`) into your home directory. To stow individual packages:
+
+```bash
+stow -t ~ zsh tmux
 ```
 
 If you already cloned without `--recurse-submodules`:
