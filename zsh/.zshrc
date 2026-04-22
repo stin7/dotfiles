@@ -48,8 +48,8 @@ _nord_host_color() {
 }
 NORD_HOST=$(_nord_host_color)
 
-PROMPT='%F{$NORD_HOST}%n@%m%f %F{240}%~%f${vcs_info_msg_0_}
-%(?.%F{144}.%F{131})❯%f '
+PROMPT='%F{$NORD_HOST}%n@%m%f${vcs_info_msg_0_}
+%F{240}%~%f %(?.%F{144}.%F{131})❯%f '
 
 # --- fzf ---
 if [[ -f ~/.fzf.zsh ]]; then
